@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{/*<div class="am-cf">*/}}
+{{/*    共{{.totals}}条记录 共记{{.paginator.totalpages}} 页 当前页  {{.paginator.currpage}}*/}}
+{{/*    <div class="am-fr">*/}}
+{{/*        <ul class="am-pagination">*/}}
+{{/*            <li class=""><a href="/clubadmin/topics/{{.paginator.firstpage}}">«</a></li>*/}}
+{{/*            <a>{{ .ti}}</a>*/}}
+{{/*            {{range $index,$page := .paginator.pages}}*/}}
+{{/*                <li  {{if eq $.paginator.currpage $page }}class="am-active"{{end}}><a href="/clubadmin/topics/{{$page}}">{{$page}}</a></li>*/}}
+{{/*            {{end}}*/}}
+{{/*            <li><a href="/clubadmin/topics/{{.paginator.lastpage}}">»</a></li>*/}}
+{{/*        </ul>*/}}
+{{/*    </div>*/}}
+{{/*</div>*/}}
+<h1>{{ .ti}}</h1>
+<h1>
+    <ul>
+    {{range  .inventory_history}}
+            <li><p>{{.ID}}<span>{{.IP}}</span></p>
+            </li>
+
+    {{end}}
+    </ul>
+</h1>
+</body>
+</html>
